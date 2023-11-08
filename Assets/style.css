@@ -1,0 +1,151 @@
+.bnx-array {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid rgb(234, 4, 4);
+  border-radius: 25px;
+  background-color: #f7f7f7;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-top: 130px;
+  padding-bottom: 50px;
+  padding: 4rem 3rem 4rem 3rem;
+}
+.bnx-array h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+}
+
+.input-field {
+  width: 110px;
+  padding: 5px;
+  border: 2px solid #eb0909;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.submit {
+  background-color: #006fe6;
+  color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.clear-button {
+  background-color: #f7f7f7;
+  border: none;
+  cursor: pointer;
+  text-align: start;
+  margin-top: 20px;
+}
+
+.number-list {
+  text-align: left;
+  list-style-type: decimal;
+  margin-left: 0;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.sum-result, .average-result,
+.largest-result, .smallest-result {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.number-list {
+  display: flex;
+  gap: 5px;
+  direction: left;
+  list-style-type: disc;
+}
+
+.display-lists {
+  color: red;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.results {
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+@media (max-width: 600px) {
+  .results {
+    display: 100%;
+    display: block;
+  }
+  .display-lists {
+    display: 100%;
+    overflow: auto;
+  }
+}
+#snackbar, #snackbar-one {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -155px;
+  background-color: #ff0000;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 2px 2px 2px 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show, #snackbar-one.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

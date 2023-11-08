@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+   
+
+   <div class="bnx-array">
+    <!-- head text -->
+      <h1>TALS-APP</h1>
+       <!-- foram starting -->
+      <form id="numberForm">
+        <label id="number-lable" for="numberInput"></label>
+        <input placeholder="Input number" type="number" id="numberInput" class="input-field" required />
+        <button onclick="addNumber()" class="submit" type="submit"><i class="fa-solid fa-plus"></i></button>
+      </form>
+      <!-- foram ending -->
+
+      <!--display numbers  -->
+      <h2>Display Entered Numbers </h2>
+      <div class="display-lists"><p class="number-list"></p></div>
+  <!-- display results -->
+      <div class="results">
+        <p><i class="fa-solid fa-t"></i>otal = <span class="sum-result">0</span></p>
+        <p><i class="fa-solid fa-a"></i>vg = <span class="average-result">0</span></p>
+        <p><i class="fa-solid fa-l"></i>arge = <span class="largest-result">0</span></p>
+        <p><i class="fa-solid fa-s"></i>mall  = <span class="smallest-result">0</span></p>
+      </div>
+<!-- clear all values and back last added value -->
+      <div class="buttons-div">
+        <button type="button" class="clear-button" onclick="clearAll()">
+          <i class="fa-solid fa-trash fa-xl" style="color: red;"></i>
+        </button>
+
+        <div class="buttons-div">
+          <button type="button" class="clear-button" onclick="backOne()">
+            <i class="fa-solid fa-backward fa-xl" style="color: orange;"></i>
+          </button>
+      </div>
+  
+   </div>
+
+   <!-- stck-bar divs -->
+   <div id="snackbar">Enter the values first</div>
+   <div id="snackbar-one">Deleated all the values</div>
+
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
+  
